@@ -223,6 +223,15 @@ function serializarDatosRegistros() {
         var profesion = "";
     }
 
+    while(ncedula.length<11){
+        ncedula="0"+ncedula;
+    }
+    console.log(ncedula);
+
+    while(ncedula12.length<11){
+        ncedula2="0"+ncedula2;
+    }
+    console.log(ncedula2);
     var data={
         'cedula': ncedula,
         'telefono':ntelefono,
@@ -329,6 +338,11 @@ function consultar_cedula(cedula, identificador){
                 ncedula+=valores[i];    
             }
         }
+
+        while(ncedula.length<11){
+            ncedula="0"+ncedula;
+        }
+        console.log(ncedula);
         var data={
             'cedula': ncedula    
         }

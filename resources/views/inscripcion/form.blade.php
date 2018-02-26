@@ -25,7 +25,7 @@
 							placeholder="Ingrese aquí su cédula" 
 							maxlength="13" 
 							id="cedula" 
-							data-inputmask="'mask': '009-99999-9999'"		
+							data-inputmask="'mask': '999-99999-9999'"		
 							>
 							<span name="nombre_usuario" id="nombre_usuario"></span>
 							<span id="error-cedula" class="validate-has-error ocultar-mensaje-error">Mensaje de error</span>
@@ -85,7 +85,7 @@
 						<div class="form-group {{$errors->has('cedula')? 'has-error' : '' }}">
 							<label>Inscrito por:</label>
 							<input type="text" id="cedula2" name="cedula2" class="form-control" placeholder="Ingrese aquí su cédula" maxlength="13"
-							data-inputmask="'mask': '009-99999-9999'">
+							data-inputmask="'mask': '999-99999-9999'">
 							<span name="nombre_usuario2" id="nombre_usuario2" ></span>
 							
 							<span id="error-cedula2" class="validate-has-error ocultar-mensaje-error">Mensaje de error</span>
